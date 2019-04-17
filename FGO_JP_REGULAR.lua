@@ -10,7 +10,7 @@ Autoskill_List = {}
 for i = 1, 10 do
     Autoskill_List[i] = {}
     for j = 1, 2 do
-        Autoskill_List[i][j] = 0
+        Autoskill_List[i][j] = 1
     end
 end
 --***************************************************************************
@@ -20,7 +20,7 @@ end
 --スクリプトコンフィグ、簡易説明を参照してください。 https://github.com/29988122/Fate-Grand-Order_Lua/wiki/Script-configuration-%E6%97%A5%E6%9C%AC%E8%AA%9E/
 --***************************************************************************
 --スタミナ自動補充
-Refill_Enabled = 0
+Refill_Enabled = 1
 Refill_Resource = "All Apples"
 Refill_Repetitions = 0
 
@@ -76,10 +76,10 @@ Battle_CardPriority = "BAQ"
 --目標自動選択
 Battle_AutoChooseTarget = 1
 --宝具自動使用
-Battle_NoblePhantasm = "disabled"
+Battle_NoblePhantasm = "danger"
 --エネミーと味方の消滅短縮
 UnstableFastSkipDeadAnimation = 0
 --イベントステージ
-isEvent = 0
+isEvent = 1
 
 dofile(dir .. "regular.lua")
