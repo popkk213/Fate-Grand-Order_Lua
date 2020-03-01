@@ -21,9 +21,9 @@ end
 --スクリプトコンフィグ、簡易説明を参照してください。 https://github.com/29988122/Fate-Grand-Order_Lua/wiki/Script-configuration-%E6%97%A5%E6%9C%AC%E8%AA%9E/
 --***************************************************************************
 --スタミナ自動補充
-Refill_Enabled = 0
+Refill_Enabled = 1
 Refill_Resource = "All Apples"
-Refill_Repetitions = 0
+Refill_Repetitions = 30
 
 --サポートサーヴァント自動選択
 Support_SelectionMode = "first"
@@ -49,17 +49,17 @@ BoostItem_SelectionMode = "disabled" --[[
 	TODO: move this explanation to the documentation
 --]]
 
-StorySkip = 0 --[[
+StorySkip = 1 --[[
 	People really want this feature.
 ]]
 
 --オートスキル
-Enable_Autoskill = 0
-Skill_Confirmation = 0
+Enable_Autoskill = 1
+Skill_Confirmation = 1
 Skill_Command = "abc,#,def,#,ghi"
 
 --オートスキルリスト
-Enable_Autoskill_List = 0
+Enable_Autoskill_List = 1
 
 Autoskill_List[1][1] = "Settings No.1"
 Autoskill_List[1][2] = "abc,#,def,#,ghi"
@@ -96,7 +96,7 @@ Battle_CardPriority = "BAQ"
 --目標自動選択
 Battle_AutoChooseTarget = 1
 --宝具自動使用
-Battle_NoblePhantasm = "disabled"
+Battle_NoblePhantasm = "danger"
 --エネミーと味方の消滅短縮
 UnstableFastSkipDeadAnimation = 0
 
